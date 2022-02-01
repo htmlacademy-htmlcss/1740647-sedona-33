@@ -1,0 +1,13 @@
+.promotion-header {
+  background-image: url("../images/main-background.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+.subscription {
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 411px;
+}
