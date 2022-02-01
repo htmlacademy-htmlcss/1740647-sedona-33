@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Гостинницы</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <header class="main-header">
   <a class="logo" href="index.html">
-    <img class="logo-image" src="index.html" alt="Логотип">
+    <img class="logo-image" src="images/logo.svg" width="139" height="70" alt="Логотип">
   </a>
   <nav class="navigation">
     <ul class="navigation-list">
@@ -38,8 +39,8 @@
   </nav>
 </header>
 <main class="catalog-main">
-  <header class="catalog-header">
-    <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+  <section class="catalog-products">
+    <h1 class="catalog-products-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs-list">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">
@@ -50,8 +51,6 @@
         <a class="breadcrumbs-link" href="catalog.html">Гостинницы</a>
       </li>
     </ul>
-  </header>
-  <section class="catalog-products">
     <h2 class="visually-hidden">Фильтрация</h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="catalog-filter-group">
@@ -132,7 +131,7 @@
       <span class="visually-hidden">Показать карточки</span>
     </a>
     <a class="sorting-button" href="#">
-      <span class="visually-hidden">Показать крупные карточки</span>
+      <span class="visually-hidden">Показать слайдшоу</span>
     </a>
     <a class="sorting-button" href="#">
       <span class="visually-hidden">Показать список</span>
@@ -144,7 +143,7 @@
       <li class="hotel-card-item">
         <div class="hotel-card">
           <a class="hotel-card-link" href="">
-            <img class="hotel-card-image" src="" alt="Вид отеля">
+            <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="299" height="206" alt="Вид гостинницы">
           </a>
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           <p class="hotel-card-type">Гостинница</p>
@@ -152,7 +151,7 @@
           <a class="hotel-card-details-link" href="#">Подробнее</a>
           <button class="add-favorite-card-button">В избранное</button>
           <p class="hotel-card-quality">
-            <span>4 звезды</span>
+            <span role="img" class="visually-hidden">4 звезды</span>
           </p>
           <p class="hotel-card-rating">Рейтинг: 8,5</p>
         </div>
@@ -160,7 +159,7 @@
       <li class="hotel-card-item">
         <div class="hotel-card">
           <a class="hotel-card-link" href="">
-            <img class="hotel-card-image" src="" alt="Вид отеля">
+            <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="299" height="206" alt="Вид гостинницы">
           </a>
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
           <p class="hotel-card-type">Гостинница</p>
@@ -168,7 +167,7 @@
           <a class="hotel-card-details-link" href="#">Подробнее</a>
           <button class="add-favorite-card-button">В избранное</button>
           <p class="hotel-card-quality">
-            <span>3 звезды</span>
+            <span role="img" class="visually-hidden">3 звезды</span>
           </p>
           <p class="hotel-card-rating">Рейтинг: 8,9</p>
         </div>
@@ -176,7 +175,7 @@
       <li class="hotel-card-item">
         <div class="hotel-card">
           <a class="hotel-card-link" href="">
-            <img class="hotel-card-image" src="" alt="Вид отеля">
+            <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="299" height="206" alt="Вид гостинницы">
           </a>
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           <p class="hotel-card-type">Гостинница</p>
@@ -184,7 +183,7 @@
           <a class="hotel-card-details-link" href="#">Подробнее</a>
           <button class="add-favorite-card-button">В избранное</button>
           <p class="hotel-card-quality">
-            <span>2 звезды</span>
+            <span role="img" class="visually-hidden">2 звезды</span>
           </p>
           <p class="hotel-card-rating">Рейтинг: 9,2 </p>
         </div>
@@ -192,7 +191,7 @@
       <li class="hotel-card-item">
         <div class="hotel-card">
           <a class="hotel-card-link" href="">
-            <img class="hotel-card-image" src="" alt="Вид отеля">
+            <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="299" height="206" alt="Вид гостинницы">
           </a>
           <h3 class="hotel-card-title">GreenTree Inn</h3>
           <p class="hotel-card-type">Гостинница</p>
@@ -200,7 +199,7 @@
           <a class="hotel-card-details-link" href="#">Подробнее</a>
           <button class="add-favorite-card-button">В избранное</button>
           <p class="hotel-card-quality">
-            <span>2 звезды</span>
+            <span role="img" class="visually-hidden">2 звезды</span>
           </p>
           <p class="hotel-card-rating">Рейтинг: 9,2 </p>
         </div>
@@ -280,7 +279,9 @@
   </section>
   <section class="footer-htmlacademy">
     <h2 class="visually-hidden">Сделанно в HTML Academy</h2>
-    <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      <span class="visually-hidden">.htmlacademy</span>
+    </a>
   </section>
 </footer>
 </body>
