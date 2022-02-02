@@ -31,6 +31,8 @@ body {
   color: #000000;
 }
 
+/*класс button как базовая стилизация линков и кнопок, слишком часто встречаются*/
+
 .button {
   background-color: #756257;
   text-decoration: none;
@@ -204,10 +206,157 @@ body {
   color: #000000;
 }
 
+/*Catalog.html*/
+
 .catalog-products {
+  background-color: #83b3d3;
   background-image: url("../images/catalog-background-1.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
   width: 1200px;
   height: 408px;
 }
+
+.catalog-products-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 77.64px;
+  color: #ffffff;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.7px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.88px;
+  color: #ffffff;
+}
+
+.control-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.29px;
+  color: #ffffff;
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 20.7px;
+  background-color: #83b3d3;
+  width: 160px;
+  height: 48px;
+}
+
+.find-hotels {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38.82px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting-select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.29px;
+  color: #333333;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.06px;
+  color: #000000;
+}
+
+.hotel-card-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.29px;
+  color: #333333;
+}
+
+.hotel-card-min-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.29px;
+  color: #333333;
+}
+
+.hotel-card-details-link {
+  font-size: 16px;
+  line-height: 20.7px;
+  width: 133.01px;
+  height: 37px;
+}
+
+.add-favorite-card-button {
+  background-color: #83b3d3;
+  width: 140.94px;
+  height: 37px;
+  font-size: 16px;
+  line-height: 20.7px;
+}
+
+.hotel-card-rating {
+  background-color: #f2f2f2;
+  width: 160px;
+  height: 37px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-show-more {
+  background-color: #83b3d3;
+  width: 619.83px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.88px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pagination-link {
+  background-color: #83b3d3;
+  color: #ffffff;
+  width: 55px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.88px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.total-hotels-show {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.29px;
+  color: #333333;
+}
+
+.total-hotels-count {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.29px;
+  color: #333333;
+}
+
+
