@@ -14,12 +14,87 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
+
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 139px;
+  margin-right: 30px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 460px;
+}
+
+.navigation-user {
+  width: 306px;
+  margin-left: auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.promotion-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-feature-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.advantages-features-item {
+  padding: 0 75px;
+}
+
+.advantages-item:nth-child(1n+3) {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 0 75px;
 }
 
 /*класс button как базовая стилизация линков и кнопок, слишком часто встречаются*/
@@ -73,6 +148,8 @@ body {
 }
 
 .advantages-container {
+  width: 220px;
+  padding: 0 90px;
   background-color: #83b3d3;
   color: #ffffff;
 }
@@ -129,6 +206,13 @@ body {
   text-align: center;
 }
 
+.searching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 240px;
+}
+
 .searching-question {
   font-weight: 700;
   font-size: 30px;
@@ -148,13 +232,20 @@ body {
 .searching-button {
   font-size: 20px;
   line-height: 36px;
+  width: 575px;
+}
+
+.subscription {
+  padding: 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-subscription {
   background-image: url("../images/subscribe-background.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
-  width: 1200px;
   min-height: 411px;
   color: #ffffff
 }
@@ -189,6 +280,17 @@ body {
   line-height: 26px;
 }
 
+.main-footer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.footer-social {
+  margin-left: 72px;
+}
+
 .footer-address {
   font-style: normal;
 }
@@ -200,6 +302,10 @@ body {
   line-height: 40px;
   text-align: center;
   color: #000000;
+}
+
+.footer-htmlacademy {
+  margin-right: 72px;
 }
 
 /*Catalog.html*/
