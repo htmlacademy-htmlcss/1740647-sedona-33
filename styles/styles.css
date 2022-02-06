@@ -112,6 +112,17 @@ body {
 /*класс button как базовая стилизация линков и кнопок, слишком часто встречаются*/
 
 .button {
+  border: 0;
+  box-shadow: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  text-transform: none;
+  appearance: none;
+}
+
+.button {
   background-color: #756257;
   text-decoration: none;
   color: #ffffff;
