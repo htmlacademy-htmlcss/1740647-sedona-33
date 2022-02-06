@@ -288,6 +288,7 @@ body {
 }
 
 .footer-social {
+  width: 107px;
   margin-left: 72px;
 }
 
@@ -311,11 +312,11 @@ body {
 /*Catalog.html*/
 
 .catalog-products {
+  padding: 0 72px;
   background-color: #83b3d3;
   background-image: url("../images/catalog-background-1.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
-  width: 1200px;
   min-height: 408px;
 }
 
@@ -326,12 +327,33 @@ body {
   color: #ffffff;
 }
 
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 20.7px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-buttons-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-title {
@@ -356,6 +378,17 @@ body {
   height: 48px;
 }
 
+.button-reset {
+  background: none;
+  border: none;
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 72px;
+}
+
 .find-hotels {
   font-weight: 700;
   font-size: 30px;
@@ -368,6 +401,26 @@ body {
   font-size: 18px;
   line-height: 23.29px;
   color: #333333;
+}
+
+.hotel-cards {
+  padding: 0 72px;
+}
+
+.hotel-card-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel-card-item {
+  width: 340px;
+}
+
+.hotel-card {
+  padding: 20px;
 }
 
 .hotel-card-title {
