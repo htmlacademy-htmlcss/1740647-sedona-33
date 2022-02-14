@@ -424,6 +424,10 @@ body {
   color: #000000;
 }
 
+.youtube-link .twitter-link .facebook-link{
+  display: block;
+}
+
 /*Catalog.html*/
 
 .catalog-products {
