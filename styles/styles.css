@@ -565,57 +565,95 @@ body {
 .hotel-card-list {
   margin: 0 0 30px 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 18px;
   list-style-type: none;
   border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card-item {
   width: 340px;
+  box-sizing: border-box;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 25px 1fr;
+  grid-row-gap: 16px;
 }
 
-.hotel-card {
-  padding: 20px;
+.hotel-card-link {
+  display: flex;
+  margin: 0;
+  grid-column: 1 / -1;
+}
+
+.hotel-card-image {
+  object-fit: cover;
 }
 
 .hotel-card-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 24px;
-  line-height: 31.06px;
+  line-height: 31px;
+  grid-column: 1 / -1;
+
 }
 
 .hotel-card-type {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 18px;
-  line-height: 23.29px;
+  line-height: 23px;
   color: #333333;
 }
 
 .hotel-card-min-price {
   font-weight: 400;
   font-size: 18px;
-  line-height: 23.29px;
+  line-height: 23px;
   color: #333333;
+  grid-column: 3 / -1;
 }
 
 .hotel-card-details-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
-  line-height: 20.7px;
-  width: 133.01px;
+  line-height: 21px;
+  width: 133px;
   height: 37px;
+  border-radius: 4px;
 }
 
 .add-favorite-card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 3 / -1;
   background-color: #83b3d3;
-  width: 140.94px;
+  width: 141px;
   height: 37px;
   font-size: 16px;
-  line-height: 20.7px;
+  line-height: 21px;
+  border-radius: 4px;
+}
+
+.rating-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hotel-card-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   background-color: #f2f2f2;
   width: 160px;
   height: 37px;
@@ -624,6 +662,7 @@ body {
   line-height: 20.7px;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .pagination-show-more {
