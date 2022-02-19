@@ -56,20 +56,22 @@ body {
 
 .navigation {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
+  margin: 0 auto -10px auto;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
+  display: block;
   width: 139px;
   margin-right: 30px;
+  position: relative;
 }
 
 .navigation-list {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0 0 4px 0;
   width: 460px;
   list-style-type: none;
   display: flex;
@@ -77,16 +79,18 @@ body {
 }
 
 .navigation-user {
+  box-sizing: border-box;
   width: 306px;
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
+  padding-bottom: 12px;
 }
 
 .navigation-user .navigation-link {
   min-width: 17px;
   min-height: 23px;
-  padding: 24px 12px;
+  padding: 20px 12px 20px 12px;
 }
 
 .main-container {
@@ -138,28 +142,28 @@ body {
 /*класс button как базовая стилизация линков и кнопок, слишком часто встречаются*/
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 0;
   box-shadow: none;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   margin: 0;
-  text-transform: none;
+  text-transform: uppercase;
   appearance: none;
-}
-
-.button {
   background-color: #756257;
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .navigation-link {
   display: block;
-  padding: 20px 17px;
+  padding: 17px  17px 23px 17px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -169,10 +173,10 @@ body {
 }
 
 .get-hotel-link {
-  display: block;
   font-size: 16px;
   line-height: 20px;
-  padding: 9px 25px;
+  width: 160px;
+  height: 37px;
 }
 
 .promotion-text {
@@ -287,8 +291,15 @@ body {
   text-align: center;
 }
 
+.image-container {
+  display: flex;
+}
+
 .advantages-photo {
   background-color: #83b3d3;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .searching {
@@ -492,13 +503,13 @@ body {
 .control-text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 23.29px;
+  line-height: 23px;
   color: #ffffff;
 }
 
 .filter-button {
   font-size: 16px;
-  line-height: 20.7px;
+  line-height: 21px;
   background-color: #83b3d3;
   width: 160px;
   height: 48px;
@@ -573,21 +584,25 @@ body {
 }
 
 .hotel-card-item {
-  width: 340px;
   box-sizing: border-box;
-  display: grid;
+  width: 340px;
   padding: 20px;
-  grid-template-columns: 1fr 25px 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 25px;
   grid-row-gap: 16px;
 }
 
 .hotel-card-link {
   display: flex;
   margin: 0;
-  grid-column: 1 / -1;
+  width: 100%;
+  grid-column: 1/ -1;
 }
 
 .hotel-card-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -598,7 +613,6 @@ body {
   font-size: 24px;
   line-height: 31px;
   grid-column: 1 / -1;
-
 }
 
 .hotel-card-type {
@@ -608,6 +622,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  grid-column: 1 / 2;
 }
 
 .hotel-card-min-price {
@@ -615,37 +630,25 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
-  grid-column: 3 / -1;
 }
 
 .hotel-card-details-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 16px;
   line-height: 21px;
-  width: 133px;
   height: 37px;
-  border-radius: 4px;
 }
 
 .add-favorite-card-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-column: 3 / -1;
   background-color: #83b3d3;
-  width: 141px;
   height: 37px;
   font-size: 16px;
   line-height: 21px;
-  border-radius: 4px;
 }
 
 .rating-container {
-  grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
+  grid-column: 1 / -1;
 }
 
 .hotel-card-rating {
@@ -668,16 +671,12 @@ body {
 .pagination-show-more {
   align-self: center;
   justify-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #83b3d3;
   width: 620px;
   height: 60px;
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 30px;
-  border-radius: 4px;
 }
 
 .pagination-container {
@@ -700,22 +699,16 @@ body {
 }
 
 .pagination-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #83b3d3;
-  color: #ffffff;
   width: 55px;
   height: 55px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 25.88px;
+  line-height: 26px;
   text-transform: uppercase;
-  text-align: center;
   text-decoration: none;
   min-height: 55px;
   min-width: 55px;
-  border-radius: 4px;
 }
 
 .pagination-current {
