@@ -124,6 +124,7 @@ body {
   padding: 0;
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .advantages-features-item {
