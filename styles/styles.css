@@ -957,6 +957,28 @@ body {
   grid-column: 1 / -1;
 }
 
+.hotel-card-quality {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card-rating-image {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.hotel-card-rating-image:last-child {
+  margin: 0;
+}
+
+.hotel-card-rating-image::before {
+  content: url("../images/icons/rating.svg");
+  position: absolute;
+  top: -10px;
+}
+
 .hotel-card-rating {
   display: flex;
   align-items: center;
