@@ -896,7 +896,7 @@ body {
   padding: 10px 17px ;
   border: 2px solid #ffffff;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   font: inherit;
   color: #ffffff;
 }
@@ -1042,7 +1042,6 @@ body {
 
 .sorting {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 53px;
 }
@@ -1052,13 +1051,40 @@ body {
   font-size: 30px;
   line-height: 38.82px;
   text-transform: uppercase;
+  margin: 0 192px 0 0;
+  padding: 0;
+}
+
+.sorting-select-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-select-control {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23.29px;
-  color: #333333;
+  width: 287px;
+  height: 48px;
+  padding: 8px 48px 13px 18px;
+  font: inherit;
+  background-color: rgba(255, 255, 255, 0);;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  appearance: none;
+  margin: 0 81px 0 0;
+}
+
+.sorting-select-control:hover,
+.sorting-select-control:focus{
+  outline: none;
+  border: 2px solid #83B3D3;
+}
+
+.sorting-arrow {
+  position: absolute;
+  z-index: -1;
+  right: 100px;
+  top: 20px;
+  fill: rgba(0, 0, 0, 0.4);
 }
 
 .sorting-list {
@@ -1070,7 +1096,18 @@ body {
   justify-content: space-between;
 }
 
-.sorting-item {
+.sorting-select-control:active {
+  outline: none;
+  border: 2px solid #E6E6E6;
+  color: #E6E6E6;
+}
+
+.sorting-select-control:active + .sorting-arrow {
+  outline: none;
+  fill: #E6E6E6;
+}
+
+.sorting-item:not(:last-child) {
   margin-right: 8px;
 }
 
