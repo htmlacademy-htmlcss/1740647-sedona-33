@@ -896,7 +896,7 @@ body {
   padding: 10px 17px ;
   border: 2px solid #ffffff;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   font: inherit;
   color: #ffffff;
 }
@@ -1066,11 +1066,9 @@ body {
   height: 48px;
   padding: 8px 48px 13px 18px;
   font: inherit;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: right 16px center;
   appearance: none;
   margin: 0 81px 0 0;
 }
@@ -1083,6 +1081,7 @@ body {
 
 .sorting-arrow {
   position: absolute;
+  z-index: -1;
   right: 100px;
   top: 20px;
   fill: rgba(0, 0, 0, 0.4);
