@@ -155,7 +155,7 @@
           <option value="cheap" selected>Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <svg class="sorting-arrow" aria-hidden="true" focusable="false"  width="12" height="7" xmlns="http://www.w3.org/2000/svg"><path d="m6.6 6.7 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0L6 4.9 1.5.2C1.2-.1.6-.1.3.2.1.3 0 .6 0 .8c0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"/></svg>
+        <svg class="select-arrow" aria-hidden="true" focusable="false" width="12" height="7" xmlns="http://www.w3.org/2000/svg"><path d="m6.6 6.7 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0L6 4.9 1.5.2C1.2-.1.6-.1.3.2.1.3 0 .6 0 .8c0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"/></svg>
       </label>
       <!--Ссылки должны работать как кнопки при реализации JavaScript-->
       <ul class="sorting-list">
@@ -227,7 +227,7 @@
             <p class="hotel-card-type">Гостинница</p>
             <b class="hotel-card-min-price">От 2000 ₽</b>
             <a class="button hotel-card-details-link" href="#">Подробнее</a>
-            <a class="button add-favorite-card-button" href="#">В избранное</a>
+            <a class="button button-cart-added" href="#">В избранном</a>
           <div class="rating-container">
             <p class="hotel-card-quality">
               <span class="hotel-card-rating-image" role="img"></span>
@@ -289,6 +289,7 @@
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
+            <svg class="count-arrow" aria-hidden="true" focusable="false" width="12" height="7" xmlns="http://www.w3.org/2000/svg"><path d="m6.6 6.7 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0L6 4.9 1.5.2C1.2-.1.6-.1.3.2.1.3 0 .6 0 .8c0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"/></svg>
           </label>
         </div>
       </div>
@@ -296,10 +297,10 @@
     </section>
     <section class="subscription padding-container">
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-      <p class="subscription-promo-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="subscription-promo-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="email">Email</label>
-        <input class="subscription-input" type="email" name="subscription-email" id="email" placeholder="Ваш email">
+        <input class="subscription-input" type="email" name="subscription-email" id="email" placeholder="Ваш e-mail">
         <button class="button subscription-button" type="submit">Подписаться</button>
       </form>
     </section>
