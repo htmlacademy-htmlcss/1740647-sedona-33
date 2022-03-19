@@ -205,7 +205,7 @@
   </footer>
 </div>
 
-<div class="modal-container">
+<div class="modal-container visually-hidden">
   <div class="modal modal-search">
     <button class="modal-close-button">
       <span class="visually-hidden">Закрыть</span>
@@ -237,11 +237,11 @@
               <span class="modal-form-text adult-text">Взрослые:</span>
             </label>
             <div class="count-wrapper">
-              <button class="count-button increment-button">
+              <button class="count-button increment-button" type="button">
                 <svg class="count-icon increment-icon" width="13" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
               </button>
               <input class="people-count-input" value="2" id="adults" type="number">
-              <button class="count-button decrement-button">
+              <button class="count-button decrement-button" type="button">
                 <svg class="count-icon decrement-icon" width="13" height="1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
               </button>
             </div>
@@ -252,15 +252,16 @@
                 <span class="modal-form-text children-text">Дети:</span>
               </label>
               <span class="tooltip">
-                <button class="tooltip-button"></button>
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, <br> которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются <br> бесплатно.</span>
               </span>
             </span>
             <div class="count-wrapper">
-              <button class="count-button increment-button">
+              <button class="count-button increment-button" type="button">
                 <svg class="count-icon increment-icon" width="13" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
               </button>
               <input class="people-count-input" value="1" id="children" type="number">
-              <button class="count-button decrement-button">
+              <button class="count-button decrement-button" type="button">
                 <svg class="count-icon decrement-icon" width="13" height="1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
               </button>
             </div>

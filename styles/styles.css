@@ -1652,6 +1652,21 @@ body {
   border-radius: 4px;
 }
 
+.check-input:hover {
+  background-color: #E6E6E6;
+}
+
+.check-input:focus {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.check-input:active {
+  outline: none;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+
 .check-label:after {
   display: block;
   content: url("../images/icons/date.svg");
@@ -1678,12 +1693,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .people-count-group {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .count-wrapper {
@@ -1724,6 +1740,14 @@ body {
   position: relative;
 }
 
+.count-button:hover .count-icon {
+  fill: #000000;
+}
+
+.count-button:active .count-icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
 .count-button::before {
   content: '';
   position: absolute;
@@ -1747,6 +1771,10 @@ body {
 
 .count-button:focus::before {
   border: 3px solid #83B3D3;
+}
+
+.count-button:active::before {
+  border: 3px solid transparent;
 }
 
 .count-icon {
@@ -1807,15 +1835,34 @@ body {
   height: 60px;
   border-radius: 10px;
   background-color: #83B3D3;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+}
+
+.modal-search-submit:hover {
+  background-color: #68A2CA;
+}
+
+.modal-search-submit:focus {
+  background-color: #68A2CA;
+  outline: none;
+  border: 3px solid #756257;
+}
+
+.modal-search-submit:active {
+  background-color: #68A2CA;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .tooltip {
   display: inline-block;
   align-self: center;
   margin-right: 18px;
+  position: relative;
 }
 
-.tooltip-button {
+.tooltip-toggle {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1827,8 +1874,44 @@ body {
   box-sizing: border-box;
 }
 
-.tooltip-button:hover {
+.tooltip-toggle:hover {
   background-color: #68A2CA;
 }
 
+.tooltip-text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 18px 18px 26px 22px;
+  width: 256px;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: absolute;
+  top: 165%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%);
+  box-sizing: border-box;
+  display: none;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  top: -3%;
+  left: 46%;
+  content: '';
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-color: #333333;
+  transform: rotate(45deg);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
 
