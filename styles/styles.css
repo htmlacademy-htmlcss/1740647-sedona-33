@@ -1555,6 +1555,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1650,6 +1654,10 @@ body {
   background-color: #F2F2F2;
   border: 3px solid transparent;
   border-radius: 4px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .check-input:hover {
@@ -1665,6 +1673,18 @@ body {
   outline: none;
   border: 3px solid #000000;
   background-color: #ffffff;
+}
+
+.check-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.check-input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.check-input:focus::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .check-label:after {
