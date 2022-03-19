@@ -217,40 +217,56 @@
     <section class="modal-content">
       <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="field-group">
+        <div class="field-group">
           <label class="check-label" for="check-in">
-            <span class="check-text">Дата заезда</span>
+            <span class="modal-form-text">Дата заезда:</span>
             <input class="check-input" id="check-in" type="text">
           </label>
-        </p>
-        <p>
+          <span class="error-message">Мы не можем отправить вас в прошлое.</span>
+        </div>
+        <div class="field-group">
           <label class="check-label" for="check-out">
-            <span class="check-text">Дата выезда</span>
+            <span class="modal-form-text">Дата выезда:</span>
             <input class="check-input" id="check-out" type="text">
           </label>
-        </p>
-        <div class="people-count-container">
-          <p class="field-group">
-            <span class="people-count-text">Взрослые</span>
-            <button class="increment-button"></button>
-            <label class="people-count-label" for="adults">
-              <input class="people-count" id="adults" type="text">
-            </label>
-            <button class="decrement-button"></button>
-          </p>
-          <p class="field-group">
-            <span class="people-count-label">
-              <span class="people-count-text">Дети</span>
-              <span class="tooltip"></span>
-              <button class="increment-button"></button>
-            <label class="people-count-label" for="children">
-              <input class="people-count" id="children" type="text">
-            </label>
-              <button class="decrement-button"></button>
-            </span>
-          </p>
+          <span class="success-message">На эти даты есть свободные номера. Пока есть.</span>
         </div>
-        <a class="button modal-search-submit" href="#" type="submit">Найти</a>
+        <div class="people-count-container">
+          <div class="people-count-group">
+            <label class="people-count-label" for="adults">
+              <span class="modal-form-text adult-text">Взрослые:</span>
+            </label>
+            <div class="count-wrapper">
+              <button class="count-button increment-button">
+                <svg class="count-icon increment-icon" width="13" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+              </button>
+              <input class="people-count-input" value="2" id="adults" type="number">
+              <button class="count-button decrement-button">
+                <svg class="count-icon decrement-icon" width="13" height="1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="people-count-group">
+            <span class="people-count-label">
+              <label class="people-count-label" for="children">
+                <span class="modal-form-text children-text">Дети:</span>
+              </label>
+              <span class="tooltip">
+                <button class="tooltip-button"></button>
+              </span>
+            </span>
+            <div class="count-wrapper">
+              <button class="count-button increment-button">
+                <svg class="count-icon increment-icon" width="13" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+              </button>
+              <input class="people-count-input" value="1" id="children" type="number">
+              <button class="count-button decrement-button">
+                <svg class="count-icon decrement-icon" width="13" height="1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <a class="button modal-search-submit" href="#">Найти</a>
       </form>
     </section>
   </div>
