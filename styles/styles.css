@@ -1737,18 +1737,17 @@ body {
 
 .count-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
   margin-left: auto;
 }
 
 .people-count-input {
-  width: 133px;
+  width: 43px;
   height: 50px;
-  padding: 5px 40px 5px 40px;
+  padding: 5px;
   box-sizing: border-box;
   border: 3px solid transparent;
   outline: none;
-  border-radius: 4px;
   background-color: #F2F2F2;
   font-weight: 700;
   font-size: 18px;
@@ -1831,17 +1830,11 @@ body {
 }
 
 .increment-button {
-  position: absolute;
-  top: 0;
-  right: 0;
   border-radius: 0 4px 4px 0;
   background-color: #F2F2F2;
 }
 
 .decrement-button {
-  position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 4px 0 0 4px;
   background-color: #F2F2F2;
 }
@@ -1891,7 +1884,7 @@ body {
 .tooltip {
   display: inline-block;
   align-self: center;
-  margin-right: 18px;
+  margin-right: 24px;
   position: relative;
 }
 
