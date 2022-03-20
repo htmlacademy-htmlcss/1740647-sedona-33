@@ -2,6 +2,23 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon.ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon.ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon.ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon.ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon.ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon.ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon.ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/favicon.ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon.ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico/favicon-16x16.png">
+  <link rel="manifest" href="/favicon.ico/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <title>HTML Academy: Гостинницы</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -9,7 +26,7 @@
 <div class="container">
   <header class="main-header padding-container">
     <nav class="navigation">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <img class="logo-image" src="images/icons/logo.svg" width="139" height="70" alt="Логотип">
       </a>
       <ul class="navigation-list">
@@ -20,7 +37,7 @@
           <a class="navigation-link" href="#">О Cедоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-active" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-active" href="catalog.html" aria-current="page">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -34,7 +51,7 @@
           <a class="navigation-link favorite-link" href="#">
             <span class="visually-hidden">Избранное</span>
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6 0c1.3 0 2.5.5 3.5 1.3C10.5.5 12 0 13.1 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.3.2-.5.3-.9.3Zm-6-9.5 6.1 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.8 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4A3.7 3.7 0 0 0 6 2.1a3.3 3.3 0 0 0-3.3 3.3c0 .9.3 1.6.7 2.1Z"/></svg>
-            <div class="favorite-count"><span class="favorite-text">12</span></div>
+            <div class="favorite-count">12</div>
           </a>
         </li>
         <li class="navigation-item">
@@ -120,11 +137,11 @@
           <div class="range">
             <div class="range-wrapper-inputs">
               <label for="min-price" class="catalog-filter-label">
-                <input id="min-price" class="range-input" type="number" value="50" name="min-price">
+                <input id="min-price" class="range-input" type="number" value="0" name="min-price">
                 <span class="range-input-text">от</span>
               </label>
               <label for="max-price" class="catalog-filter-label">
-                <input id="max-price" class="range-input" type="number" value="1500" name="max-price">
+                <input id="max-price" class="range-input" type="number" value="9000" name="max-price">
                 <span class="range-input-text">до</span>
               </label>
             </div>
@@ -260,7 +277,7 @@
       <div class="pagination-container">
         <ol class="pagination-list">
           <li class="pagination-item">
-            <a class="button pagination-link pagination-current" aria-current="page">1</a>
+            <a class="button pagination-link pagination-current" aria-current="page" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="button pagination-link" href="#">2</a>
@@ -300,7 +317,7 @@
       <p class="subscription-promo-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="email">Email</label>
-        <input class="subscription-input" type="email" name="subscription-email" id="email" placeholder="Ваш e-mail">
+        <input class="subscription-input" type="email" name="subscription-email" id="email" placeholder="Ваш e-mail" required>
         <button class="button subscription-button" type="submit">Подписаться</button>
       </form>
     </section>
