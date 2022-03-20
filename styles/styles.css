@@ -219,7 +219,7 @@ body {
 }
 
 .navigation-link-active::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 16px;
   bottom: 3px;
@@ -467,6 +467,7 @@ body {
 }
 
 .main-subscription {
+  background-color: #4F6278;
   background-image: url("../images/subscribe-background.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -598,7 +599,7 @@ body {
 }
 
 .footer-social-link::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -666,7 +667,7 @@ body {
 }
 
 .footer-address-phone::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -710,7 +711,7 @@ body {
 }
 
 .htmlacademy-link::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -757,7 +758,7 @@ body {
   box-sizing: border-box;
   padding-top: 35px;
   padding-bottom: 70px;
-  background-color: #83b3d3;
+  background-color: #635859;
   background-image: url("../images/catalog-background-1.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -791,7 +792,7 @@ body {
 
 .breadcrumbs-item:not(:last-child)::after {
   position: absolute;
-  content: url('../images/icons/breadcrumbs-arrow.svg');
+  content: url("../images/icons/breadcrumbs-arrow.svg");
   right: -16px;
 }
 
@@ -805,7 +806,7 @@ body {
 }
 
 .breadcrumbs-link::before {
-  content: '';
+  content: "";
   position: absolute;
   padding: 0 5px;
   width: 100%;
@@ -908,23 +909,23 @@ body {
   background-color: #ffffff;
 }
 
-.control-input[type='checkbox']:checked + .control-checkbox::after {
+.control-input[type="checkbox"]:checked + .control-checkbox::after {
   content: url("../images/icons/checkbox-control.svg");
   position: absolute;
   top: -2%;
   left: 20%;
 }
 
-.control-input[type='checkbox']:hover + .control-checkbox {
+.control-input[type="checkbox"]:hover + .control-checkbox {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-input[type='checkbox']:focus + .control-checkbox {
+.control-input[type="checkbox"]:focus + .control-checkbox {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
 
-.control-input[type='checkbox']:active + .control-checkbox {
+.control-input[type="checkbox"]:active + .control-checkbox {
   background-color: rgba(255, 255, 255, 0.3);
   outline: 3px solid transparent;
 }
@@ -940,8 +941,8 @@ body {
   background-color: #ffffff;
 }
 
-.control-input[type='radio']:checked + .control-radio::after {
-  content: '';
+.control-input[type="radio"]:checked + .control-radio::after {
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -951,7 +952,7 @@ body {
   background-color: #3F5E72;
 }
 
-.control-input[type='radio']:focus + .control-radio {
+.control-input[type="radio"]:focus + .control-radio {
   outline: 3px solid #83B3D3;
 }
 
@@ -1736,18 +1737,17 @@ body {
 
 .count-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
   margin-left: auto;
 }
 
 .people-count-input {
-  width: 133px;
+  width: 43px;
   height: 50px;
-  padding: 5px 40px 5px 40px;
+  padding: 5px;
   box-sizing: border-box;
   border: 3px solid transparent;
   outline: none;
-  border-radius: 4px;
   background-color: #F2F2F2;
   font-weight: 700;
   font-size: 18px;
@@ -1781,7 +1781,7 @@ body {
 }
 
 .count-button::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -1830,17 +1830,11 @@ body {
 }
 
 .increment-button {
-  position: absolute;
-  top: 0;
-  right: 0;
   border-radius: 0 4px 4px 0;
   background-color: #F2F2F2;
 }
 
 .decrement-button {
-  position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 4px 0 0 4px;
   background-color: #F2F2F2;
 }
@@ -1890,7 +1884,7 @@ body {
 .tooltip {
   display: inline-block;
   align-self: center;
-  margin-right: 18px;
+  margin-right: 24px;
   position: relative;
 }
 
@@ -1934,7 +1928,7 @@ body {
   position: absolute;
   top: -3%;
   left: 46%;
-  content: '';
+  content: "";
   display: block;
   width: 19px;
   height: 19px;
